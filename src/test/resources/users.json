@@ -1,0 +1,37 @@
+[
+  {
+    "username": "user1",
+    "password": "123456",
+    "role": "admin",
+    "expectSuccess": true,
+    "description": "Login valid admin"
+  },
+  {
+    "username": "user2",
+    "password": "wrong",
+    "role": "user",
+    "expectSuccess": false,
+    "description": "Wrong password"
+  },
+  {
+    "username": "",
+    "password": "123456",
+    "role": "user",
+    "expectSuccess": false,
+    "description": "Empty username"
+  },
+  {
+    "username": "user3",
+    "password": "",
+    "role": "user",
+    "expectSuccess": false,
+    "description": "Empty password"
+  },
+  {
+    "username": "user4",
+    "password": "123456",
+    "role": "user",
+    "expectSuccess": true,
+    "description": "Valid normal user"
+  }
+]

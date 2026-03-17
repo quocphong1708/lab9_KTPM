@@ -1,0 +1,29 @@
+<suite name="Suite">
+
+    <!-- CHẠY SMOKE -->
+    <test name="Smoke Test">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginDataDrivenTest"/>
+        </classes>
+    </test>
+
+    <!-- CHẠY REGRESSION -->
+    <test name="Regression Test">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginDataDrivenTest"/>
+        </classes>
+    </test>
+    
+    
+
+</suite>
